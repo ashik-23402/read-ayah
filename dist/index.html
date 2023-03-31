@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Refresh your day by- Al-Quran</title>
+    
+
+    <script>
+      let isDark = false;
+
+      function onclickdark() {
+        const myImg = document.getElementById("icon");
+        if (isDark === false) {
+          isDark = true;
+          myImg.src = "./onmode.png";
+          document.documentElement.classList.add("dark");
+        } else {
+          isDark = false;
+          myImg.src = "./offmode.png";
+          document.documentElement.classList.remove("dark");
+          console.log("i am from offmode i am not here");
+        }
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-cf6502db.js"></script>
+    <link rel="stylesheet" href="/assets/index-dfe8c3f3.css">
+  </head>
+  <body class="bg-zinc-100 dark:bg-slate-800">
+    <div class="flex justify-end">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcElEQVR4nOXVv0vVYRTH8Zc3JUJTREPBQYxAJRcnF4dA6Ad0VwchmtWGaNAGlUYXBR0EB+kPEBf7sZiBQQ3h5sXAoagGwaKIRMEpLpzhcrnXq/I4SJ/pec75fp/385wDn8P/pHtYxYfzOLwNL/ETB+hLDbiJL3iCFxhPDWjFV2TRiV1cTg1Zw2isJzCTGnAf71EV+9fxoqR6i9sF+1z0J5muRS8yBbFP6EoJuYvlotg73EoJGcF0UWweYykhj/CsKJbvz2ZKyEMsFMUy0Zc7qSC92CjjXZ/RkAJSjR9oKpGbiQvUpQDN4mmJeCZKmYsXV9J13CiXbMd3tJTJPwgvWw4nKCxhLQbwHEcYOu4Wj7GOmjL5OgyHO/zFH/zCPt6Ee68VWFNJ5ZNLMaiuqKwGXI31JHbQfIL/XMIcttF/gu878AofY1ScStkAbYQj9KA+6t+NQaxgD1PHlLiiMjECFrGF3zjEtyhpvj+NZz38Yukf8XxAl9/XRP4AAAAASUVORK5CYII="
+        alt="light"
+        id="icon"
+        class="p-4"
+        onclick="onclickdark()"
+      />
+    </div>
+
+    <div
+      class="flex flex-col m-auto w-4/5 bg-slate-50 border-1 border-t-white space-y-5 p-3 rounded-lg box-border shadow-lg leading-8 my-20 sm:my-44 dark:bg-gray-800"
+    >
+      <div class="w-full grow">
+        <p class="text-center font-bold sm:text-xl dark:text-white">
+          بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
+        </p>
+        <p
+          class="text-xs text-center font-serif font-medium sm:text-xl dark:text-white"
+        >
+          In the name of God, the Most Gracious, the Most Merciful.
+        </p>
+      </div>
+      <div class="w-full grow">
+        <p
+          id="arabic"
+          class="inline-block text-right font-semibold sm:text-xl dark:text-white"
+        ></p>
+      </div>
+      <div class="w-full grow">
+        <p
+          id="trans"
+          class="text-justify font-serif font-medium sm:text-xl dark:text-white"
+        ></p>
+        <p
+          id="ref"
+          class="text-justify font-serif font-medium sm:text-sm dark:text-white"
+        ></p>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
